@@ -21,13 +21,13 @@ export default function Order () {
             <p clasName='font-weight-bold mb-0 text-dark h5'>35 min</p>
           </div>
           <div clasName='ml-auto'>
-            <Link
+            <a
               clasName='btn btn-primary text-white'
               data-toggle='modal'
               data-target='#trackModal'
             >
               Track
-            </Link>
+            </a>
           </div>
         </div>
         <div clasName='row m-0'>

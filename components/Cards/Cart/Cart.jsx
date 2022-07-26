@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import React from 'react'
 
 export default function Cart () {
   return (
@@ -25,7 +25,7 @@ export default function Cart () {
             </button>
           </div>
           <div clasName='modal-body osahan-my-cart'>
-            <Link
+            <a
               href='#'
               clasName='text-dark d-flex align-items-center mb-3'
               data-toggle='modal'
@@ -40,7 +40,7 @@ export default function Cart () {
                   Edit<i clasName='mdi h6 m-0 mdi-chevron-right'></i>
                 </p>
               </div>
-            </Link>
+            </a>
             <div clasName='details-page border-top pt-3 osahan-my-cart-item'>
               <h6 clasName='mb-3'>Pizza Hut</h6>
               <div clasName='d-flex align-items-center mb-3'>
@@ -52,9 +52,9 @@ export default function Cart () {
                   <p clasName='mb-0 text-black'>Cheese pie</p>
                   <p clasName='mb-0 small'>$15</p>
                 </div>
-                <Link href='#' clasName='ml-auto'>
+                <a href='#' clasName='ml-auto'>
                   <i clasName='btn btn-light text-danger mdi mdi-trash-can-outline rounded'></i>
-                </Link>
+                </a>
               </div>
               <div clasName='d-flex align-items-center mb-3'>
                 <div clasName='mr-2'>
@@ -65,9 +65,9 @@ export default function Cart () {
                   <p clasName='mb-0 text-black'>Peperoni pie</p>
                   <p clasName='mb-0 small'>$23</p>
                 </div>
-                <Link href='#' clasName='ml-auto'>
+                <a href='#' clasName='ml-auto'>
                   <i clasName='btn btn-light text-danger mdi mdi-trash-can-outline rounded'></i>
-                </Link>
+                </a>
               </div>
               <div clasName='d-flex align-items-center mb-3'>
                 <div clasName='mr-2'>
@@ -78,21 +78,21 @@ export default function Cart () {
                   <p clasName='mb-0 text-black'>Osahan Burger</p>
                   <p clasName='mb-0 small'>$50</p>
                 </div>
-                <Link href='#' clasName='ml-auto'>
+                <a href='#' clasName='ml-auto'>
                   <i clasName='btn btn-light text-danger mdi mdi-trash-can-outline rounded'></i>
-                </Link>
+                </a>
               </div>
               <div clasName='my-3'>
-                <Link
+                <a
                   href='#'
                   data-toggle='modal'
                   data-target='#myitemsModal'
                   clasName='text-primary'
                 >
                   <i clasName='mdi mdi-plus mr-2'></i> Add more items
-                </Link>
+                </a>
               </div>
-              <Link
+              <a
                 href='#'
                 clasName='d-flex align-items-center mb-3'
                 data-toggle='modal'
@@ -105,8 +105,8 @@ export default function Cart () {
                   <p clasName='mb-0 text-dark'>Delivery</p>
                   <p clasName='mb-0 small text-black-50'>$0</p>
                 </div>
-              </Link>
-              <Link
+              </a>
+              <a
                 href='#'
                 clasName='d-flex align-items-center mb-3'
                 data-toggle='modal'
@@ -124,7 +124,7 @@ export default function Cart () {
                     <i clasName='mdi mdi-plus'></i>
                   </button>
                 </div>
-              </Link>
+              </a>
             </div>
           </div>
           <div clasName='modal-footer justify-content-start osahan-my-cart-footer'>

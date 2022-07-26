@@ -1,8 +1,9 @@
-import Link from 'next/link'
+import React from 'react'
+
 export default function Product () {
   return (
     <>
-      <Link
+      <a
         href='#'
         clasName='text-decoration-none col-xl-4 col-md-4 mb-4'
         data-toggle='modal'
@@ -15,7 +16,7 @@ export default function Product () {
             <i clasName='mdi mdi-truck-fast-outline'></i> Free delivery
           </span>
         </div>
-      </Link>
+      </a>
     </>
   )
 }

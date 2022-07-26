@@ -314,7 +314,6 @@ export default function Home () {
         </a>
       </div>
       {/* <!-- Content Row --> */}
-      
     </div>
   )
 }

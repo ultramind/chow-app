@@ -121,17 +121,17 @@ export default function TrackStatus () {
           <div clasName='modal-footer justify-content-start'>
             <div clasName='row w-100'>
               <div clasName='col-3 px-0'>
-                <Link
+                <a
                   href='messages.html'
                   clasName='btn btn-outline-primary btn-block'
                 >
                   <i clasName='far fa-comment-alt'></i>
-                </Link>
+                </a>
               </div>
               <div clasName='col-9 pr-0'>
-                <Link href='orders.html' clasName='btn btn-primary btn-block'>
+                <a href='orders.html' clasName='btn btn-primary btn-block'>
                   Call to (Edward)
-                </Link>
+                </a>
               </div>
             </div>
           </div>

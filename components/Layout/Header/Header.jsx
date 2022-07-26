@@ -9,7 +9,7 @@ const Header = () => {
       </button>
       <ul className='navbar-nav'>
         <li className='nav-item dropdown no-arrow d-sm-none'>
-          <Link
+          <a
             className='nav-link dropdown-toggle'
             href='#'
             id='searchDropdown'
@@ -19,7 +19,7 @@ const Header = () => {
             aria-expanded='false'
           >
             <i className='fas fa-search fa-fw'></i>
-          </Link>
+          </a>
           <div
             className='dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in'
             aria-labelledby='searchDropdown'
@@ -43,7 +43,7 @@ const Header = () => {
           </div>
         </li>
         <li className='nav-item dropdown no-arrow mx-2 osahan-t-loc'>
-          <Link
+          <a
             className='nav-link dropdown-toggle text-dark'
             href='#'
             data-toggle='modal'
@@ -51,19 +51,16 @@ const Header = () => {
           >
             <span className='mdi mdi-crosshairs-gps'></span>
             <span className='ml-2'>San Frnciso, california</span>
-          </Link>
+          </a>
         </li>
         <li className='nav-item dropdown no-arrow mx-2 osahan-t-pu'>
-          <Link
-            className='nav-link dropdown-toggle text-dark'
-            href='orders.html'
-          >
+          <a className='nav-link dropdown-toggle text-dark' href='orders.html'>
             <i className='mdi mdi-shopping text-danger'></i>
             <span className='ml-2'>Pick up</span>
-          </Link>
+          </a>
         </li>
         <li className='nav-item dropdown no-arrow mx-2 osahan-t-bd'>
-          <Link
+          <a
             className='nav-link dropdown-toggle text-dark'
             data-toggle='modal'
             data-target='#mycoupansModal'
@@ -71,11 +68,11 @@ const Header = () => {
           >
             <i className='mdi mdi-sack-percent text-warning'></i>
             <span className='ml-2'>Best Deals</span>
-          </Link>
+          </a>
         </li>
       </ul>
       <div className='ml-auto'>
-        <Link href='search.html'>
+        <a href='search.html'>
           <form className='d-none d-sm-inline-block form-inline mx-2 my-2 my-md-0 mw-100 navbar-search'>
             <div className='input-group'>
               <input
@@ -92,23 +89,23 @@ const Header = () => {
               </div>
             </div>
           </form>
-        </Link>
-        <Link
+        </a>
+        <a
           href='#'
           className='btn btn-primary '
           data-toggle='modal'
           data-target='#filtersModal'
         >
           <i className='mdi mdi-filter-variant'></i>
-        </Link>
-        <Link
+        </a>
+        <a
           href='#'
           className='btn btn-danger ml-2'
           data-toggle='modal'
           data-target='#cartModal'
         >
           <i className='mdi mdi-shopping-outline'></i>
-        </Link>
+        </a>
       </div>
     </nav>
   )
