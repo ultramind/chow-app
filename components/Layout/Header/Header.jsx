@@ -100,7 +100,7 @@ const Header = () => {
         </a>
         <a
           href='#'
-          className='btn btn-danger'
+          className='btn btn-danger ml-2'
           data-toggle='modal'
           data-target='#cartModal'
         >

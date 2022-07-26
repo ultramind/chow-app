@@ -1,7 +1,7 @@
 import Cart from '../RightPane/Cart/Cart'
-import Footer from '../Footer/Footer'
-import Header from '../Header/Header'
-import SideBar from '../SideBar/SideBar'
+import Footer from './Footer/Footer'
+import Header from './Header/Header'
+import SideBar from './Header/SideBar/SideBar'
 import Address from '../RightPane/Address/Address'
 import Filter from '../RightPane/Filter/Filter'
 import Payment from '../RightPane/PaymentMethod/Payment'
@@ -19,9 +19,9 @@ function Layout ({ children }) {
           <div className='container-fluid'>{children}</div>
         </div>
         <Cart />
-        <Address/>
-        <Filter/>
-        <Payment/>
+        <Address />
+        <Filter />
+        <Payment />
         <Footer />
       </div>
     </div>

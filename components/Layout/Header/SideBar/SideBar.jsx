@@ -28,6 +28,12 @@ const SideBar = () => {
         </a>
       </li>
       <li className='nav-item'>
+        <a className='nav-link' href='favourities.html'>
+          <i className='mdi mdi-bookmark-outline'></i>
+          <span>Vendors</span>
+        </a>
+      </li>
+      <li className='nav-item'>
         <a className='nav-link' href='orders.html'>
           <i className='mdi mdi-book-open'></i>
           <span>Orders</span>
