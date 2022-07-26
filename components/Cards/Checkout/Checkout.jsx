@@ -95,19 +95,19 @@ export default function Checkout () {
                 </p>
               </label>
             </div>
-            <a
+            <Link
               href='#'
               data-toggle='modal'
               data-target='#paymentsModal'
               clasName='btn btn-light btn-block'
             >
               <i clasName='mdi mdi-plus'></i> Add
-            </a>
+            </Link>
           </div>
           <div clasName='modal-footer justify-content-start'>
-            <a href='orders.html' clasName='btn btn-primary btn-block'>
+            <Link href='orders.html' clasName='btn btn-primary btn-block'>
               Confirm payment ($53.00)
-            </a>
+            </Link>
           </div>
         </div>
       </div>

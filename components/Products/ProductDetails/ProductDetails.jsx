@@ -16,9 +16,9 @@ export default function ProductDetails () {
           <div clasName='modal-body px-3 pt-0 pb-3'>
             <div clasName='pb-3 position-relative'>
               <div clasName='position-absolute heart-fav'>
-                <a href='#'>
+                <Link href='#'>
                   <i clasName='mdi mdi-heart'></i>
-                </a>
+                </Link>
               </div>
               <img
                 src='img/food-banner.png'
@@ -80,10 +80,10 @@ export default function ProductDetails () {
               </div>
             </form>
             <p clasName='mb-0'>
-              <a href='#' clasName='text-decoration-none text-primary'>
+              <Link href='#' clasName='text-decoration-none text-primary'>
                 <i clasName='fas fa-plus mr-2 bg-light rounded p-2'></i> Add
                 special instructions
-              </a>
+              </Link>
             </p>
           </div>
           <div clasName='modal-footer'>

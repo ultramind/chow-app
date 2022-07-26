@@ -4,46 +4,46 @@ const SideBar = () => {
       className='navbar-nav bg-gradient-primary sidebar sidebar-dark accordion'
       id='accordionSidebar'
     >
-      <a className='sidebar-brand d-flex align-items-center' href='index.html'>
+      <Link className='sidebar-brand d-flex align-items-center' href='index.html'>
         <div className='sidebar-brand-icon'>
           <img src='img/logo.png' className='img-fluid' />
         </div>
-      </a>
+      </Link>
       <li className='nav-item active'>
-        <a className='nav-link' href='index.html'>
+        <Link className='nav-link' href='index.html'>
           <i className='mdi mdi-home-variant-outline'></i>
           <span>Home</span>
-        </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='explore.html'>
+        <Link className='nav-link' href='explore.html'>
           <i className='mdi mdi-grid-large'></i>
           <span>Explore</span>
-        </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='favourities.html'>
+        <Link className='nav-link' href='favourities.html'>
           <i className='mdi mdi-bookmark-outline'></i>
           <span>Favourities</span>
-        </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='favourities.html'>
+        <Link className='nav-link' href='favourities.html'>
           <i className='mdi mdi-bookmark-outline'></i>
           <span>Vendors</span>
-        </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='orders.html'>
+        <Link className='nav-link' href='orders.html'>
           <i className='mdi mdi-book-open'></i>
           <span>Orders</span>
-        </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='settings.html'>
+        <Link className='nav-link' href='settings.html'>
           <i className='mdi mdi-cog'></i>
           <span>Settings</span>
-        </a>
+        </Link>
       </li>
       
       <div
@@ -65,9 +65,9 @@ const SideBar = () => {
           all orders over <span className='text-primary'>$25</span>
         </p>
         <p className='small'>It is a limited time offer that will expire soon.</p>
-        <a href='explore.html' className='btn btn-primary btn-block btn-sm'>
+        <Link href='explore.html' className='btn btn-primary btn-block btn-sm'>
           Order now <i className='pl-3 fas fa-long-arrow-alt-right'></i>
-        </a>
+        </Link>
       </div>
       <div className='d-none d-md-block'>
         <div className='user d-flex align-items-center p-3'>

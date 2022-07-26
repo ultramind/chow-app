@@ -83,14 +83,14 @@ export default function OrderDetails () {
           <div clasName='modal-footer justify-content-start'>
             <div clasName='row w-100'>
               <div clasName='col-3 px-0'>
-                <a href='detail.html' clasName='btn btn-warning btn-block'>
+                <Link href='detail.html' clasName='btn btn-warning btn-block'>
                   <i clasName='mdi mdi-account-plus-outline'></i>
-                </a>
+                </Link>
               </div>
               <div clasName='col-9 pr-0'>
-                <a href='explore.html' clasName='btn btn-primary btn-block'>
+                <Link href='explore.html' clasName='btn btn-primary btn-block'>
                   Place new order
-                </a>
+                </Link>
               </div>
             </div>
           </div>
