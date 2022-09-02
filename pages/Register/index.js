@@ -16,12 +16,27 @@ export default function Register () {
               </div>
               <div className='w-100'>
                 <p className='mb-0 small font-weight-bold text-dark'>
-                  Full Name
+                  First Name
                 </p>
                 <input
                   type='text'
                   className='form-control form-control-sm p-0 border-input border-0 rounded-0'
-                  placeholder='Enter Your Name'
+                  placeholder='Enter Your FirstName'
+                />
+              </div>
+            </div>
+            <div className='d-flex align-items-center mb-4'>
+              <div className='mr-3 bg-light rounded p-2 osahan-icon'>
+                <i className='mdi mdi-account-outline'></i>
+              </div>
+              <div className='w-100'>
+                <p className='mb-0 small font-weight-bold text-dark'>
+                  Last Name
+                </p>
+                <input
+                  type='text'
+                  className='form-control form-control-sm p-0 border-input border-0 rounded-0'
+                  placeholder='Enter Your LastName'
                 />
               </div>
             </div>
@@ -56,19 +71,13 @@ export default function Register () {
               </div>
             </div>
             <div className='mb-3'>
-              <Link
-                href='index.html'
-                className='btn btn-primary btn-block mb-3'
-              >
+              <a href='index.html' className='btn btn-primary btn-block mb-3'>
                 Create an account
-              </Link>
+              </a>
               <p className='text-center'>
-                Already have an account?{' '}
-                <Link
-                  href='signin.html'
-                  className='text-danger text-decoration-none'
-                >
-                  Sign in
+                Already have an account?
+                <Link href='login'>
+                  <a className='text-danger text-decoration-none'>Sign in</a>
                 </Link>
               </p>
             </div>

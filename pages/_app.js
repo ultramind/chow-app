@@ -1,10 +1,11 @@
 import Layout from '../components/Layout/Layout'
+import StoreProvider from '../context/StoreProvider'
 
 function MyApp ({ Component, pageProps }) {
   return (
-    <Layout>
+    <StoreProvider>
       <Component {...pageProps} />
-    </Layout>
+    </StoreProvider>
   )
 }
 

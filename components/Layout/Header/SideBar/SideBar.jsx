@@ -1,3 +1,4 @@
+import Link from 'next/link'
 const SideBar = () => {
   return (
     <ul
@@ -10,42 +11,70 @@ const SideBar = () => {
         </div>
       </a>
       <li className='nav-item active'>
-        <a className='nav-link' href='index.html'>
-          <i className='mdi mdi-home-variant-outline'></i>
-          <span>Home</span>
-        </a>
+        <Link href='/'>
+          <a className='nav-link'>
+            <i className='mdi mdi-home-variant-outline'></i>
+            <span>Home</span>
+          </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='explore.html'>
-          <i className='mdi mdi-grid-large'></i>
-          <span>Explore</span>
-        </a>
+        <Link href='/orders'>
+          <a
+            className='nav-link d-flex align-items-center'
+            href='messages.html'
+          >
+            <i className='mdi mdi-silverware-variant'></i>
+            <span>Orders</span>
+            <span className='rounded-circle bg-white text-primary ml-auto px-2 py-1'>
+              2
+            </span>
+          </a>
+        </Link>
+      </li>
+
+      <li className='nav-item'>
+        <Link href='/users'>
+          <a className='nav-link'>
+            <i className='mdi mdi-account-outline'></i>
+            <span>Users</span>
+          </a>
+        </Link>
       </li>
       <li className='nav-item'>
-        <a className='nav-link' href='favourities.html'>
-          <i className='mdi mdi-bookmark-outline'></i>
-          <span>Favourities</span>
-        </a>
+        <Link href='/vendors'>
+          <a className='nav-link'>
+            <i className='mdi mdi-bookmark-outline'></i>
+            <span>Vendors</span>
+          </a>
+        </Link>
       </li>
+      <Link href='/orders'>
+        <li className='nav-item'>
+          <a className='nav-link' href='explore.html'>
+            <i className='mdi mdi-grid-large'></i>
+            <span>Explore</span>
+          </a>
+        </li>
+      </Link>
+      <Link href='/profile'>
+        <li className='nav-item'>
+          <a className='nav-link' href='explore.html'>
+            <i className='mdi mdi-cog'></i>
+            <span>Profile</span>
+          </a>
+        </li>
+      </Link>
       <li className='nav-item'>
-        <a className='nav-link' href='favourities.html'>
-          <i className='mdi mdi-bookmark-outline'></i>
-          <span>Vendors</span>
+        <a className='nav-link d-flex align-items-center' href='messages.html'>
+          <i className='mdi mdi-message-text-outline mr-2'></i>
+          <span>Reports</span>
+          <span className='rounded-circle bg-white text-primary ml-auto px-2 py-1'>
+            4
+          </span>
         </a>
       </li>
-      <li className='nav-item'>
-        <a className='nav-link' href='orders.html'>
-          <i className='mdi mdi-book-open'></i>
-          <span>Orders</span>
-        </a>
-      </li>
-      <li className='nav-item'>
-        <a className='nav-link' href='settings.html'>
-          <i className='mdi mdi-cog'></i>
-          <span>Settings</span>
-        </a>
-      </li>
-      
+
       <div
         className='bg-white m-3 p-3 sidebar-alert rounded text-center alert fade show d-none d-md-inline'
         role='alert'
@@ -64,7 +93,9 @@ const SideBar = () => {
           <br />
           all orders over <span className='text-primary'>$25</span>
         </p>
-        <p className='small'>It is a limited time offer that will expire soon.</p>
+        <p className='small'>
+          It is a limited time offer that will expire soon.
+        </p>
         <a href='explore.html' className='btn btn-primary btn-block btn-sm'>
           Order now <i className='pl-3 fas fa-long-arrow-alt-right'></i>
         </a>
